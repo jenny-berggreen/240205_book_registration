@@ -1,0 +1,138 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-size: 1.2rem;
+	font-family: sans-serif;
+}
+
+ul {
+	list-style: none;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-bottom: 2rem;
+	text-align: center;
+}
+
+button {
+	border: none;
+	border-radius: 0.2rem;
+	height: 2.3rem;
+	background-color: rgb(20, 90, 151);
+	color: white;
+	padding: 0 1rem 0 1rem;
+}
+
+button:hover {
+	cursor: pointer;
+	background-color: rgb(11, 68, 117);
+}
+
+.button--red {
+	background-color: red;
+}
+
+input,
+select {
+	height: 2.3rem;
+}
+
+input {
+	padding: 0.5rem;
+}
+
+input,
+select {
+	border-radius: 0.2rem;
+	border: solid 2px rgb(65, 136, 198);
+}
+
+/* ----------------------------------------------------- */
+
+.main-container {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: row;
+}
+
+.book-form {
+	display: flex;
+	flex-direction: column;
+	gap: 0.3rem;
+	flex-basis: 30%;
+
+	padding: 1rem;
+	background-color: rgb(160, 211, 255);
+}
+
+.book-form label,
+.submit-button {
+	margin-top: 10px;
+}
+
+.submit-button {
+	margin-top: 2rem;
+}
+
+/* ------------------------------------------------------------ */
+
+.book-list {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 70%;
+
+	background-color: rgb(73, 170, 255);
+}
+
+.select-list-button-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	flex-basis: 15%;
+}
+
+.display-books-container {
+	flex-basis: 85%;
+	padding: 1rem;
+}
+
+.display-audio-books {
+	display: none;
+}
+
+.physical-books-header, 
+.audio-books-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 3rem;
+	border-radius: 0.5rem;
+	background-color: rgb(20, 90, 151);
+	color: white;
+	font-weight: 600;
+}
+
+.physical-books-header span, 
+.audio-books-header span {
+	text-align: center;
+	flex-basis: 20%;
+}
+
+.books-row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 3rem;
+	border-radius: 0.5rem;
+	background-color: rgb(234, 245, 255);
+	margin-top: 0.5rem;
+}
+
+.books-row span {
+	text-align: center;
+	flex-basis: 20%;
+}

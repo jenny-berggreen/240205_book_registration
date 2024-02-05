@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Book registration</title>
+	<link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+	<div class="main-container">
+		<!-- FORM SECTION -->
+		<form class="book-form">
+			<h2>Register books</h2>
+
+			<label for="title">Title</label>
+			<input type="text" name="title" class="title" required>
+
+			<label for="author">Author</label>
+			<input type="text" name="author" class="author" required>
+
+			<label for="format">Format</label>
+			<select name="format" class="format" required>
+				<option value="physical">Physical book</option>
+				<option value="audio">Audio book</option>
+			</select>
+			
+			<label for="isbn">ISBN</label>
+			<input type="text" name="isbn" class="isbn" required>
+
+			<label for="narrator">Narrator</label>
+			<input type="text" name="narrator" class="narrator" required disabled>
+
+			<button type="submit" class="submit-button">Register book</button>
+		</form>
+
+		<!-- DISPLAY BOOKS SECTION -->
+		<section class="book-list">
+			<div class="select-list-button-container">
+				<button class="render-physical-books-button">Display physical books</button>
+				<button class="render-audio-books-button">Display audio books</button>
+			</div>
+
+			<div class="display-books-container">
+				<div class="display-physical-books">
+					<header class="physical-books-header">
+						<span>Title</span>
+						<span>Author</span>
+						<span>Format</span>
+						<span>ISBN</span>
+						<span></span>
+					</header>
+					<ul class="physical-books-list"></ul>
+				</div>
+
+				<div class="display-audio-books">
+					<header class="audio-books-header">
+						<span>Title</span>
+						<span>Author</span>
+						<span>Format</span>
+						<span>Narrator</span>
+						<span></span>
+					</header>
+					<ul class="audio-books-list"></ul>
+				</div>
+
+			</div>
+		</section>
+	</div>
+	
+	<script src="./js/app.js"></script>
+</body>
+</html>
