@@ -155,7 +155,7 @@ class UI {
 				renderedAuthor.textContent = book.author;
 				renderedFormat.textContent = book.format;
 				renderedNarrator.textContent = book.narrator;
-				deleteButton.textContent = 'Delete';
+				deleteButton.textContent = 'Delete'
 
 				liRow.classList.add('books-row');
 				deleteButton.classList.add('button--red');
